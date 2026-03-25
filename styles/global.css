@@ -39,6 +39,7 @@ p{
 }
 .hover{
     color: var(--brand-color-light);
+    fill: var(--brand-color-light);
 }
 .tag{
     font: 500 10px/120% var(--font-family);
@@ -53,4 +54,8 @@ p{
 .linha_fina2{
     font:800 14px/140% var(--font-family);
     color: var(--text-color-primary);
+}
+path:hover{
+    fill: var(--brand-color-light);
+    cursor: pointer;
 }
