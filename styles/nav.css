@@ -1,0 +1,12 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 32px;
+    border-color: var(--stroke-color);
+    border-width: 1px 0px;
+    border-style: solid;
+    min-width: 1280px;
+}
+a{
+    height: 20px;
+}

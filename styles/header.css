@@ -4,6 +4,7 @@ header{
     align-items: center;
     grid-template-columns:repeat(3,1fr);  
     padding: 20px 32px;
+    min-width: 1280px;
 }
 header>*{
     display: flex;
@@ -12,12 +13,10 @@ header>*{
 header>*>img{
     width: 20px;
     height: 20px;
-    
 }
 #rigth_header{
     justify-content: end;
     height: 20px;
-
 }
 #left_header{
     justify-content: start;

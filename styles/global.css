@@ -16,10 +16,10 @@ html{
     background-color: var(--bg-color);
 }
 body{
-    /* background-color: var(--bg-color); */
     margin: auto;
     color: var(--text-color-primary);
     max-width: 1280px;
+    width: 100%;
 }
 .heading1{
     font: 800 24px/135% var(--font-family);
@@ -31,7 +31,7 @@ body{
 .heading3{
     font:800 14px/140% var(--font-family);
 }
-span{
+span,a {
     font:600 14px/145% var(--font-family); 
 }
 p{
@@ -39,4 +39,18 @@ p{
 }
 .hover{
     color: var(--brand-color-light);
+}
+.tag{
+    font: 500 10px/120% var(--font-family);
+    background-color:var(--brand-color-dark);
+    padding:4px 8px;
+    border-radius: 4px;
+}
+.linha_fina{
+    font: 800 24px/135% var(--font-family);
+    color: var(--text-color-primary);
+}
+.linha_fina2{
+    font:800 14px/140% var(--font-family);
+    color: var(--text-color-primary);
 }
