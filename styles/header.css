@@ -1,0 +1,30 @@
+header{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:repeat(3,1fr);  
+    padding: 20px 32px;
+}
+header>*{
+    display: flex;
+    gap: 8px;
+}
+header>*>img{
+    width: 20px;
+    height: 20px;
+    
+}
+#rigth_header{
+    justify-content: end;
+    height: 20px;
+
+}
+#left_header{
+    justify-content: start;
+    height: 20px;
+}
+.heading1{
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+}
