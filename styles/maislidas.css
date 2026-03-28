@@ -3,6 +3,7 @@
     flex-direction: column;
     min-width: 1216px;
     gap: 24px;
+    padding-bottom: 24px;
 }
 
 #mais_lidas_header{
@@ -10,11 +11,16 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;
+    height: 32px;
+}
+#mais_lidas_span{
+    font:600 14px/20px var(--font-family); 
 }
 
 #ver_tudo{
     display: flex;
     align-items: center;
+    height: 20px;
 }
 
 svg{
@@ -29,10 +35,23 @@ svg{
 }
 
 #noticias_mais_lidas{
-    border: 1px solid red;
-    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
 }
 .noticia_lida{
-    border: 1px solid blue;
-    height: 50px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+.tag3{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+.lnha_fina3{
+    font:800 16px/140% var(--font-family);
+
 }

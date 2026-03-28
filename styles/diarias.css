@@ -55,7 +55,7 @@
     padding: 100px 12px 12px;
     gap: 8px;
 }
-.linha_fina2{
-    max-height: 60px;
+.linha_fina2, .linha_fina3{
+    max-height: 66px;
     overflow: hidden;
 }
