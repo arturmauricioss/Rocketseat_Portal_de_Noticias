@@ -1,0 +1,11 @@
+#mais_conteudos{
+    display: flex;
+    gap: 32px;
+    min-width:1216px; 
+}
+
+#noticias_ia{
+    width: 696px;
+    border: 1px solid green;
+    height: 856px;
+}

@@ -1,0 +1,13 @@
+aside{
+    width: 488px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+aside>img{
+    width: 488px;
+}
+#endnews{
+    height: 544px;
+    border: 1px solid red;
+}
