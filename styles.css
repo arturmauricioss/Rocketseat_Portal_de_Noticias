@@ -9,6 +9,7 @@
     --bg-color:#0F172A;
     font-family: "Archivo", sans-serif;
     background-color: var(--bg-color);
+    color: var(--text-color-primary);
 }
 
 main{
@@ -18,6 +19,9 @@ main{
     margin: auto;
     padding: 20px 4px 40px;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
 }
 article{
     margin: 8px;
@@ -39,31 +43,27 @@ span{
     border-radius: 4px;
     box-shadow: 0 4px 16px rgba(2, 6, 23, 0.25);
 }
-h2{
-    margin: 8px 0;
+h1,h2{
     font-size: 12px;
     line-height: 1;
     color: var(--text-color-primary);
     max-height: 36px;
     overflow: hidden;
+    margin: 4px 0;
 }
 p{
     font-size: 10px;
-    margin-bottom: 8px;
 }
 
 .capa_full{
     display: flex;
     flex-direction: column;
-    position: relative;
-    
-
-    
+    position: relative;  
 }
 .content{
     position: absolute;
     bottom: 0;
-    padding: 20px 12px 0;
+    padding: 10px 6px 4px;
     z-index: 3;
     background: linear-gradient(to bottom,#02061700, #020617ff);
 }
@@ -78,12 +78,58 @@ p{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    h1{
+        font-size: 16px;
+        max-height: 48px;
+    }
+    span{
+        font-size: 8px;
+    }
+    #grid_medio_geral{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:400px) {
+    h1{
+        font-size: 20px;
+        max-height: 60px;
+    }
+    
+    .content{
+        padding-inline: 12px;
+    }
+    span{
+        font-size: 10px;
+        padding: 2px  4px;
+    }
+    #grid_medio_geral{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
 @media (min-width:500px) {
     main{
         padding-inline: 24px;
     }
-    
+    h1{
+        font-size: 24px;
+        min-height: 72px;
+        margin: 16px 0;
+    }
+    h2{
+        margin:8px 0;
+    }
+
+}
+@media (min-width:600px) {
+    span{
+        padding: 4px 8px;   
+    }
+    h2{
+        font-size: 16px;
+        min-height: 48px;
+    }
 }
 @media (min-width:700px) {
     main{
@@ -93,13 +139,23 @@ p{
         display: grid;
         grid-template-columns: repeat(4,1fr);
     }
+    h2{
+        font-size:12px;
+        min-height: 36px;
+    }
+    span{
+        font-size: 8px;
+    }
 }
-@media (min-width:880px) {
+@media (min-width:800px) {
     #grid_superior_geral{
         display: flex;
     } 
     #grid_superior_direito{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-    } 
+    }
+    #grid_medio_geral{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
