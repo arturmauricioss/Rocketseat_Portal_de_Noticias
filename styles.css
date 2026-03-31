@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color-primary:#F1F5FF;
+    --brand-color-dark:#1D4ED8;
+    font-family: "Archivo", sans-serif;
+}
+body{
+
+
+}
+main{
+    width: 100%;
+    min-width: 180px;
+    max-width: 1280px;
+    background-color: bisque;
+    /* height: 800px; */
+    margin: auto;
+}
+section{
+
+}
+img{
+    width: 100%;
+}
+span{
+    background-color: var(--brand-color-dark);
+    color: var(--text-color-primary);
+    padding: 4px 8px;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(2, 6, 23, 0.25);
+}
