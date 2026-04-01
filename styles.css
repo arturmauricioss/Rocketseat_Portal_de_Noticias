@@ -331,24 +331,28 @@ hr{
         padding: 0;
         margin: 0;
     }
+    i{
+        font-size: 16px;
+    }
 
     .left{
         gap: 16px;
         height: 140px;
+        object-fit: cover;
     }
     #grid_inferior_ia{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        row-gap: 40px;
+        row-gap: 25px;
         margin: 0;
         padding: 0;
         justify-content: space-between;
+        align-items: center;
     }
+
     #grid_final{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 16px;
-        max-height: 410px;
     }
     #grid_inferior_extra{
         display: grid;
