@@ -12,6 +12,28 @@
     background-color: var(--bg-color);
     color: var(--text-color-primary);
 }
+header{
+    padding: 20px 32px;
+    height: 72px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header> :nth-child(3){
+    margin: auto;
+    color: var(--brand-color-dark);
+}
+
+header>img{
+    width: 20px;
+    height: 20px;
+}
+header>h1{
+    margin: 0;
+    text-transform: uppercase;
+}
 
 main{
     width: 100%;
